@@ -6,11 +6,11 @@
   <title>Intel: Sustainability Through the Ages</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="page">
 
   <!-- Header / Hero Section -->
-  <header>
-    <div>
+  <header class="hero">
+    <div class="hero-content">
       <!-- Ask Copilot to teach you about `.svg`. 🙂 You'll need to resize the logo with CSS. -->
       <img src="img/intel-header-logo.svg" alt="Intel Logo" />
       <!-- Main Heading -->
@@ -28,114 +28,159 @@
   </header>
 
   <!-- Timeline Cards Section -->
-  <section>
+  <section class="timeline">
 
     <!-- Card 1: 1968 -->
-    <div>
+    <div class="timeline-card">
+      <div class="card-media">
+        <img src="https://images.unsplash.com/photo-1665392996454-632407a679bb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGludGVsfGVufDB8fDB8fHww" alt="Historic Intel-era image for 1968" />
+        <div class="card-overlay">Intel begins a new chapter in innovation.</div>
+      </div>
+      <div class="card-content">
       <h2>1968</h2>
       <h3>Intel Founded</h3>
-      <!-- Add image -->
       <p>
         Robert Noyce and Gordon Moore rename the newly formed company 
         NM Electronics to Intel Corporation, laying the foundation for 
         decades of technological innovation.
       </p>
+      </div>
     </div>
 
     <!-- Card 2: 1971 -->
-    <div>
+    <div class="timeline-card">
+      <div class="card-media">
+        <img src="https://images.unsplash.com/photo-1680598810629-8ddc88c90901?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGludGVsfGVufDB8fDB8fHww" alt="Historic Intel-era image for 1971" />
+        <div class="card-overlay">Hover to reveal the story behind each milestone.</div>
+      </div>
+      <div class="card-content">
       <h2>1971</h2>
       <h3>First Microprocessor</h3>
-      <!-- Add image -->
       <p>
         Intel debuts the 4004, the world's first commercial microprocessor, 
         igniting the microprocessor revolution and propelling the future 
         of computing devices.
       </p>
+      </div>
     </div>
 
     <!-- Card 3: 1978 -->
-    <div>
+    <div class="timeline-card">
+      <div class="card-media">
+        <img src="data:image/jpeg;base64,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" alt="Historic Intel-era image for 1978" />
+        <div class="card-overlay">A sleek visual timeline keeps the focus on progress.</div>
+      </div>
+      <div class="card-content">
       <h2>1978</h2>
       <h3>8086 Processor</h3>
-      <!-- Add image -->
       <p>
         Launch of the 8086 processor, establishing the x86 architecture 
         that drives countless PCs and servers in the modern era.
       </p>
+      </div>
     </div>
 
     <!-- Card 4: 1985 -->
-    <div>
+    <div class="timeline-card">
+      <div class="card-media">
+        <img src="https://i.ebayimg.com/images/g/pcQAAOSwWGdmGXjb/s-l400.jpg" alt="Historic Intel-era image for 1985" />
+        <div class="card-overlay">Each image slot lifts up on hover.</div>
+      </div>
+      <div class="card-content">
       <h2>1985</h2>
       <h3>386 Processor</h3>
-      <!-- Add image -->
       <p>
         Intel introduces the 386 processor with 32-bit architecture, 
         ushering in a new era of performance and multitasking for 
         personal computers.
       </p>
+      </div>
     </div>
 
     <!-- Card 5: 2006 -->
-    <div>
+    <div class="timeline-card">
+      <div class="card-media">
+        <img src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1500w,f_auto,q_auto:best/rockcms/2024-01/240108-carbon-emissions-united-states-2023-kh-092762.jpg" alt="Intel sustainability image for 2006" />
+        <div class="card-overlay">Sustainability becomes part of the roadmap.</div>
+      </div>
+      <div class="card-content">
       <h2>2006</h2>
       <h3>Peak GHG Emissions</h3>
-      <!-- Add image -->
       <p>
         This year marks Intel's highest annual greenhouse gas emissions 
         for operations. Over subsequent years, Intel invests heavily in 
         chemical abatement, renewable energy, and energy-efficient 
         manufacturing to reverse this trend.
       </p>
+      </div>
     </div>
 
     <!-- Card 6: 2020 -->
-    <div>
+    <div class="timeline-card">
+      <div class="card-media">
+        <img src="https://futurumgroup.com/wp-content/uploads/2020/05/Screen-Shot-2020-05-17-at-8.03.05-PM.png.webp" alt="Intel sustainability image for 2020" />
+        <div class="card-overlay">Modern design meets environmental action.</div>
+      </div>
+      <div class="card-content">
       <h2>2020</h2>
       <h3>RISE Strategy</h3>
-      <!-- Add image -->
       <p>
         Intel launches its RISE (Responsible, Inclusive, Sustainable, 
         Enabling) strategy and 2030 goals, aiming to drive industry-wide 
         progress on climate action, water stewardship, and waste reduction.
       </p>
+      </div>
     </div>
 
     <!-- Card 7: 2022 -->
-    <div>
+    <div class="timeline-card">
+      <div class="card-media">
+        <img src="https://static.vecteezy.com/system/resources/previews/014/013/291/non_2x/logo-net-zero-emission-co2-logo-illustration-vector.jpg" alt="Intel sustainability image for 2022" />
+        <div class="card-overlay">Hover any image to read a short highlight.</div>
+      </div>
+      <div class="card-content">
       <h2>2022</h2>
       <h3>Net-Zero By 2040</h3>
-      <!-- Add image -->
       <p>
         Intel announces its commitment to achieve net-zero greenhouse 
         gas emissions (Scope 1 and 2) across its global operations 
         by 2040, building on years of environmental initiatives.
       </p>
+      </div>
     </div>
 
     <!-- Card 8: 2023 -->
-    <div>
+    <div class="timeline-card">
+      <div class="card-media">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVhbbbL6Rep04CEMc588MFers6Q8AjV4zsIg&s" alt="Intel sustainability image for 2023" />
+        <div class="card-overlay">Clean energy progress looks sharper in this layout.</div>
+      </div>
+      <div class="card-content">
       <h2>2023</h2>
       <h3>Renewable Electricity</h3>
-      <!-- Add image -->
       <p>
         The company achieves 99% renewable electricity usage worldwide, 
         helping to drastically lower carbon emissions and driving progress 
         toward Intel's long-term sustainability goals.
       </p>
+      </div>
     </div>
 
     <!-- Card 9: 2024 -->
-    <div>
+    <div class="timeline-card">
+      <div class="card-media">
+        <img src="https://boldrimpact.com/hubfs/UNGC-1.jpg" alt="Intel sustainability image for 2024" />
+        <div class="card-overlay">A polished card style keeps the page cohesive.</div>
+      </div>
+      <div class="card-content">
       <h2>2024</h2>
       <h3>Sustainability Summit</h3>
-      <!-- Add image -->
       <p>
         Intel hosts its first Sustainability Summit, uniting suppliers, 
         government officials, and industry leaders to collaborate on 
         next-generation sustainable semiconductor manufacturing.
       </p>
+      </div>
     </div>
   </section>
   <p>Scroll to view timeline | Hover over cards to learn more!</p>
